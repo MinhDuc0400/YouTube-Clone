@@ -33,7 +33,7 @@ body{
     float: left;
     height: 24px;
     width: 80px;
-    padding: 16px 16px;
+    padding: 14%;
 }
 
 
@@ -272,6 +272,20 @@ body{
     text-overflow: ellipsis;
 }
 
+.shadow
+{
+    position: fixed; /* Sit on top of the page content */
+    display: unset; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7); /* Black background with opacity */
+    z-index: 1;
+}
+
 .video-title h3{
     display: 100%;
     margin: 0;
@@ -312,6 +326,13 @@ body{
 }
 
 @media screen and (max-width:660px){
+    .sidenav{
+        z-index: 2;
+    }
+    .videos{
+        width: 100%;
+        margin: 0;
+    }
     .search-input{
         display: none;
     }
